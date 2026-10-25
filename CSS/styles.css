@@ -1,74 +1,107 @@
-html,
-body {
-    overflow: hidden;
-    color: #fefeff;
-    text-shadow: rgb(0, 0, 0, 1) 0px 0px 15px;
+:root {
+    color-scheme: dark;
+    --color-bg: #0a0a0c;
+    --color-surface: #111113;
+    --color-surface-raised: #151518;
+    --color-text: #f4f4f5;
+    --color-muted: #9999a3;
+    --color-subtle: #696972;
+    --color-accent: #c4f27b;
+    --color-accent-soft: rgba(196, 242, 123, 0.12);
+    --color-border: rgba(255, 255, 255, 0.08);
+    --color-border-strong: rgba(255, 255, 255, 0.14);
+    --content-width: 1120px;
+    --header-height: 58px;
+    --space-section: clamp(5.5rem, 11vw, 9.5rem);
+    --radius-card: 18px;
+    --radius-pill: 999px;
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
     scroll-behavior: smooth;
-    cursor: none;
-    margin: 0;
-    padding-top: env(safe-area-inset-top);
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
-    padding-bottom: env(safe-area-inset-bottom);
+    scroll-padding-top: 100px;
+    background: var(--color-bg);
 }
 
 body {
+    min-width: 320px;
     margin: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: black;
+    color: var(--color-text);
+    background:
+        radial-gradient(ellipse at 80% 6%, rgba(91, 113, 54, 0.11), transparent 32rem),
+        var(--color-bg);
+    font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
-canvas {
-    width: 100%;
-    height: 100%;
+::selection {
+    color: var(--color-bg);
+    background: var(--color-accent);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 5px;
+    border-radius: 3px;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+.skip-link {
     position: fixed;
-    top: 0;
-    left: 0;
-    pointer-events: all;
-    z-index: -1;
-    touch-action: manipulation;
-    /* allows gestures like scroll, tap */
-    user-select: none;
-    /* prevents accidental text selection */
-    -webkit-user-drag: none;
-    /* prevents image drag ghosting on iOS */
+    z-index: 10;
+    top: 8px;
+    left: 8px;
+    padding: 10px 16px;
+    transform: translateY(-150%);
+    color: var(--color-bg);
+    background: var(--color-accent);
+    border-radius: 8px;
 }
 
-#starrysky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    /* Prevent stars from overflowing */
-    z-index: -1;
-    /* Place it behind other content */
-    background: rgba(0, 0, 0, 0);
-    /* Base background color */
+.skip-link:focus {
+    transform: translateY(0);
 }
 
-.star {
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    /* Make the stars circular */
-    opacity: 0;
-    /* Start with invisible stars */
-    animation: twinkle 2s infinite ease-in-out;
-    /* Twinkling animation */
+.page-section {
+    width: min(var(--content-width), calc(100% - 64px));
+    margin-inline: auto;
 }
 
-@keyframes twinkle {
-
-    0%,
-    100% {
-        opacity: 0;
+@media (max-width: 680px) {
+    .page-section {
+        width: min(var(--content-width), calc(100% - 40px));
     }
+}
 
-    50% {
-        opacity: 1;
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }

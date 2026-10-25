@@ -1,92 +1,307 @@
-<html lang="en">
+<!doctype html>
+<html lang="pt-PT">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="dark light">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-
-    <title>devCacti</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0a0a0c">
+    <meta name="description" content="Portefólio de Tiago Laim Rodrigues, estudante de Programação de Sistemas de Informação e software developer focado em .NET, aplicações web e integração de sistemas.">
+    <title>Tiago Laim Rodrigues — Software Developer</title>
     <link rel="icon" href="Images/logo.png" type="image/png">
     <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/images.css">
     <link rel="stylesheet" href="CSS/text.css">
     <link rel="stylesheet" href="CSS/containers.css">
-    <link rel="stylesheet" href="CSS/icons.css">    
+    <link rel="stylesheet" href="CSS/icons.css">
 </head>
 <body>
-    <canvas></canvas>
-    <div id="starrysky"></div>
-    <div class="icons">
-    </div>
-    <main>
-        <br><br>
-        <h1 class="title">Hello World!</h1>
-        <h2 class="subtitle">devCacti's Portfolio (Kinda)</h2>
-        <br><br>
-        <div id="TableOfContents"></div>
-        <br>
-        <div class="index-title">
-            <a href="#TableOfContents">#</a> <h1 class="info title">Table of Contents</h1>
-        </div>
-        <div class="center toc">
-            <p>- <a class="toc-index" href="#LinkedIn">LinkedIn</a> -</p>
-            <p>- <a class="toc-index" href="#Contact">Contact</a> -</p>
-        </div>
+    <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
 
-        <br>
-        <div id="LinkedIn"></div>
-        <br>
-        <div class="index-title">
-            <a href="#LinkedIn">#</a>
-            <h1 class="info title">LinkedIn</h1>
-        </div>
-        <div class="linkedin">
-            <h2>My LinkedIn Profile</h2>
-            <p>Feel free to connect with me on LinkedIn to see my professional background and updates.</p>
-            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="tiago-laim" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://pt.linkedin.com/in/tiago-laim?trk=profile-badge"></a></div>
-            <br>
-        </div>
+    <header class="site-header">
+        <a class="wordmark" href="#inicio" aria-label="Tiago Laim Rodrigues, início">
+            <span class="wordmark-mark" aria-hidden="true">TL</span>
+            <span>Tiago Laim Rodrigues</span>
+        </a>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a href="#projetos">Projetos</a>
+            <a href="#percurso">Percurso</a>
+            <a href="#tecnologias">Tecnologias</a>
+            <a class="nav-contact" href="#contacto">Contacto <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
 
-        
+    <main id="conteudo">
+        <section class="hero page-section" id="inicio" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Software Developer <span class="eyebrow-divider">/</span> Leiria, Portugal</p>
+                <h1 id="hero-title">Olá, sou o<br><span>Tiago Laim Rodrigues.</span></h1>
+                <p class="hero-description">Estudante do 2.º ano do TeSP em Programação de Sistemas de Informação na Universidade de Leiria e Oeste. Focado em arquitetura backend com .NET e C#, aplicações web e mobile, visão computacional e integração de sistemas com hardware.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projetos">Ver projetos <span aria-hidden="true">↓</span></a>
+                    <a class="button button-secondary" href="/CV_Tiago_Rodrigues.pdf" download>Descarregar CV <span aria-hidden="true">↓</span></a>
+                </div>
+                <ul class="social-links" aria-label="Contactos e perfis">
+                    <li><a href="https://github.com/devCacti" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/tiago-laim" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></li>
+                    <li><a href="mailto:info@devcacti.com">Email <span aria-hidden="true">↗</span></a></li>
+                </ul>
+            </div>
+            <aside class="hero-aside" aria-label="Foco profissional">
+                <div class="orbit orbit-outer" aria-hidden="true"></div>
+                <div class="orbit orbit-inner" aria-hidden="true"></div>
+                <div class="hero-monogram" aria-hidden="true">TL<span>.</span></div>
+                <div class="hero-aside-note">
+                    <span class="note-index">01 / 04</span>
+                    <span>Construir. Integrar.<br>Colocar em produção.</span>
+                </div>
+            </aside>
+        </section>
 
-        <!--Contact Section-->
-        <br>
-        <div id="Contact"></div>
-        <br>
-        <div class="index-title">
-            <a href="#Contact">#</a> <h1 class="info title">Contact</h1>
-        </div>
-        <div class="center contact">
-            <h2>All the contact information you need to know</h2>
-            <p>For information about my projects</p>
-            <a href="mailto:info@devcacti.com">info@devcacti.com</a>
-            <br>
-            <p>For help related to my projects</p>
-            <a href="mailto:help@devcacti.com">help@devcacti.com</a>
-            <br>
-            <p>For personal contact or questions</p>
-            <a href="mailto:tiago.laim@icloud.com">tiago.laim@icloud.com</a>
-            <br>
-            <p class="italic small">Due to spam and security matters, I will not give out my phone number.</p>
-            <p></p>
-        </div>
-        <div id="spacer"></div>
+        <section class="page-section projects-section" id="projetos" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">TRABALHO SELECIONADO <span class="eyebrow-divider">/</span> SOFTWARE &amp; SISTEMAS</p>
+                    <h2 id="projects-title">Projetos em destaque<span class="heading-period">.</span></h2>
+                </div>
+                <p class="section-aside">Sistemas reais, do desenho da arquitetura à integração e produção.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card project-card-featured">
+                    <div class="project-topline">
+                        <span class="project-number">01</span>
+                        <span class="project-status"><span class="status-dot" aria-hidden="true"></span> Em produção</span>
+                    </div>
+                    <div class="project-copy">
+                        <p class="project-kicker">FULL-STACK <span aria-hidden="true">·</span> WEB APP</p>
+                        <h3>MacroPrep</h3>
+                        <p>Aplicação full-stack para planeamento de refeições e gestão de listas de compras. Frontend Blazor WebAssembly Standalone (PWA), publicado num servidor Linux no Azure com reverse proxy e HTTPS.</p>
+                    </div>
+                    <figure class="architecture architecture-macro">
+                        <figcaption>Arquitetura <span>01 — fluxo da aplicação</span></figcaption>
+                        <svg viewBox="0 0 720 166" role="img" aria-labelledby="macro-diagram-title macro-diagram-desc">
+                            <title id="macro-diagram-title">Arquitetura da aplicação MacroPrep</title>
+                            <desc id="macro-diagram-desc">Cliente Blazor WebAssembly PWA comunica com uma API ASP.NET Core, que acede à base de dados através do Entity Framework Core.</desc>
+                            <defs>
+                                <marker id="macro-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                                    <path d="M0 0L8 4L0 8" fill="none" stroke="currentColor" stroke-width="1.2"></path>
+                                </marker>
+                            </defs>
+                            <path class="diagram-flow" d="M204 82H278M441 82H515" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 6" marker-end="url(#macro-arrow)"></path>
+                            <path class="diagram-flow diagram-flow-reverse" d="M278 94H204M515 94H441" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 6" marker-end="url(#macro-arrow)"></path>
+                            <g class="diagram-node">
+                                <rect x="20" y="45" width="184" height="82" rx="12"></rect>
+                                <text class="diagram-node-label" x="38" y="73">CLIENTE</text>
+                                <text class="diagram-node-title" x="38" y="99">Blazor WASM</text>
+                                <text class="diagram-node-detail" x="38" y="116">PWA · HTTPS</text>
+                            </g>
+                            <g class="diagram-node diagram-node-accent">
+                                <rect x="278" y="45" width="163" height="82" rx="12"></rect>
+                                <text class="diagram-node-label" x="296" y="73">SERVIÇO</text>
+                                <text class="diagram-node-title" x="296" y="99">ASP.NET Core</text>
+                                <text class="diagram-node-detail" x="296" y="116">Minimal APIs</text>
+                            </g>
+                            <g class="diagram-node">
+                                <rect x="515" y="45" width="184" height="82" rx="12"></rect>
+                                <text class="diagram-node-label" x="533" y="73">DADOS</text>
+                                <text class="diagram-node-title" x="533" y="99">EF Core</text>
+                                <text class="diagram-node-detail" x="533" y="116">Base de dados SQL</text>
+                            </g>
+                        </svg>
+                    </figure>
+                    <div class="project-bottom">
+                        <ul class="tag-list" aria-label="Tecnologias do MacroPrep">
+                            <li>C#</li><li>ASP.NET Core</li><li>Blazor WASM</li><li>EF Core</li><li>Azure</li>
+                        </ul>
+                        <a class="project-link" href="https://macroprep.devcacti.com" target="_blank" rel="noopener noreferrer" aria-label="Abrir MacroPrep em produção">Ver em produção <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-vision">
+                    <div class="project-topline">
+                        <span class="project-number">02</span>
+                        <span class="project-category">VISÃO COMPUTACIONAL + HARDWARE</span>
+                    </div>
+                    <div class="project-copy">
+                        <h3>Tracking por visão computacional</h3>
+                        <p>Seguimento de poses humanas em tempo real, com mapeamento preciso na testa do alvo e controlo físico de servomotores.</p>
+                    </div>
+                    <figure class="architecture architecture-vision">
+                        <figcaption>Pipeline <span>02 — da deteção à atuação</span></figcaption>
+                        <svg viewBox="0 0 680 160" role="img" aria-labelledby="vision-diagram-title vision-diagram-desc">
+                            <title id="vision-diagram-title">Pipeline de visão computacional e controlo de hardware</title>
+                            <desc id="vision-diagram-desc">YOLOv8 estima a pose em vídeo processado por OpenCV, Python envia comandos em série através de PySerial e Arduino controla os servomotores.</desc>
+                            <defs>
+                                <marker id="vision-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                                    <path d="M0 0L8 4L0 8" fill="none" stroke="currentColor" stroke-width="1.2"></path>
+                                </marker>
+                            </defs>
+                            <path class="diagram-flow" d="M151 78H185M316 78H350M481 78H515" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 6" marker-end="url(#vision-arrow)"></path>
+                            <g class="diagram-node diagram-node-compact">
+                                <rect x="10" y="42" width="141" height="72" rx="11"></rect>
+                                <text class="diagram-node-label" x="24" y="66">POSE</text>
+                                <text class="diagram-node-title" x="24" y="89">YOLOv8</text>
+                                <text class="diagram-node-detail" x="24" y="104">OpenCV · Python</text>
+                            </g>
+                            <g class="diagram-node diagram-node-compact">
+                                <rect x="185" y="42" width="131" height="72" rx="11"></rect>
+                                <text class="diagram-node-label" x="199" y="66">COMANDO</text>
+                                <text class="diagram-node-title" x="199" y="89">PySerial</text>
+                                <text class="diagram-node-detail" x="199" y="104">Comunicação série</text>
+                            </g>
+                            <g class="diagram-node diagram-node-compact diagram-node-accent">
+                                <rect x="350" y="42" width="131" height="72" rx="11"></rect>
+                                <text class="diagram-node-label" x="364" y="66">CONTROLO</text>
+                                <text class="diagram-node-title" x="364" y="89">Arduino</text>
+                                <text class="diagram-node-detail" x="364" y="104">controlo do tracking</text>
+                            </g>
+                            <g class="diagram-node diagram-node-compact">
+                                <rect x="515" y="42" width="155" height="72" rx="11"></rect>
+                                <text class="diagram-node-label" x="529" y="66">ATUAÇÃO</text>
+                                <text class="diagram-node-title" x="529" y="89">Servomotores</text>
+                                <text class="diagram-node-detail" x="529" y="104">Tracking físico</text>
+                            </g>
+                        </svg>
+                    </figure>
+                    <div class="project-bottom">
+                        <ul class="tag-list" aria-label="Tecnologias do sistema de tracking">
+                            <li>Python</li><li>YOLOv8</li><li>OpenCV</li><li>PySerial</li><li>Arduino</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-standard">
+                    <div class="project-topline">
+                        <span class="project-number">03</span>
+                        <span class="project-category">BACKEND <span aria-hidden="true">·</span> CLEAN ARCHITECTURE</span>
+                    </div>
+                    <div class="project-copy">
+                        <h3>PraesentiaePraxis</h3>
+                        <p>Sistema de gestão e registo de presenças académicas com separação estrita de responsabilidades.</p>
+                    </div>
+                    <div class="layer-stack" aria-label="Camadas da Clean Architecture">
+                        <span class="layer layer-api">API</span>
+                        <span class="layer-connector" aria-hidden="true"></span>
+                        <span class="layer layer-application">Application</span>
+                        <span class="layer-connector" aria-hidden="true"></span>
+                        <span class="layer layer-domain">Domain</span>
+                        <span class="layer-connector" aria-hidden="true"></span>
+                        <span class="layer layer-infrastructure">Infrastructure <span>· EF Core</span></span>
+                    </div>
+                    <div class="project-bottom">
+                        <ul class="tag-list" aria-label="Tecnologias do PraesentiaePraxis">
+                            <li>C#</li><li>.NET</li><li>EF Core</li><li>Clean Architecture</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-standard">
+                    <div class="project-topline">
+                        <span class="project-number">04</span>
+                        <span class="project-category">IOS <span aria-hidden="true">·</span> MOBILE NATIVO</span>
+                    </div>
+                    <div class="project-copy">
+                        <h3>Cartix</h3>
+                        <p>Aplicação iOS nativa para listas de compras e leitura ótica de códigos EAN em tempo real, com consulta às APIs Open Food Facts e Open Beauty Facts. Arquitetura modular estrita: uma classe por ficheiro.</p>
+                    </div>
+                    <div class="mobile-flow" aria-label="Fluxo de leitura e consulta de produtos">
+                        <span class="mobile-flow-step">EAN</span>
+                        <span class="mobile-flow-line" aria-hidden="true"></span>
+                        <span class="mobile-flow-step">VisionKit</span>
+                        <span class="mobile-flow-line" aria-hidden="true"></span>
+                        <span class="mobile-flow-step">Open Food Facts<br>Open Beauty Facts</span>
+                    </div>
+                    <div class="project-bottom">
+                        <ul class="tag-list" aria-label="Tecnologias da aplicação iOS">
+                            <li>Swift</li><li>SwiftUI</li><li>AVFoundation</li><li>VisionKit</li><li>REST</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="page-section journey-section" id="percurso" aria-labelledby="journey-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">PERCURSO <span class="eyebrow-divider">/</span> EXPERIÊNCIA &amp; EDUCAÇÃO</p>
+                    <h2 id="journey-title">Aprender fazendo<span class="heading-period">.</span></h2>
+                </div>
+                <p class="section-aside">Uma base académica em paralelo com experiência direta em equipas e produto.</p>
+            </div>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-date"><span>2025</span><span class="timeline-type">EXPERIÊNCIA</span></div>
+                    <div class="timeline-content">
+                        <h3>Quality Assurance (QA) Intern</h3>
+                        <p class="timeline-organization">InPost</p>
+                        <p>Validação de software em ambiente empresarial, execução de testes, reporte estruturado de bugs e colaboração direta com equipas de engenharia.</p>
+                    </div>
+                    <span class="timeline-marker" aria-hidden="true"></span>
+                </article>
+                <article class="timeline-item">
+                    <div class="timeline-date"><span>2025 — Presente</span><span class="timeline-type">EDUCAÇÃO</span></div>
+                    <div class="timeline-content">
+                        <h3>TeSP em Programação de Sistemas de Informação</h3>
+                        <p class="timeline-organization">Universidade de Leiria e Oeste <span class="current-year">(2.º ano)</span></p>
+                        <p>Formação focada em desenvolvimento de software, bases de dados relacionais e arquitetura de sistemas.</p>
+                    </div>
+                    <span class="timeline-marker" aria-hidden="true"></span>
+                </article>
+            </div>
+        </section>
+
+        <section class="page-section stack-section" id="tecnologias" aria-labelledby="stack-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">FERRAMENTAS <span class="eyebrow-divider">/</span> TECNOLOGIAS</p>
+                    <h2 id="stack-title">Stack tecnológica<span class="heading-period">.</span></h2>
+                </div>
+                <p class="section-aside">Tecnologias organizadas por domínio, sem classificações artificiais.</p>
+            </div>
+            <div class="stack-grid">
+                <article class="stack-card">
+                    <span class="stack-index">01</span>
+                    <h3>Backend &amp; Arquitetura</h3>
+                    <ul class="tag-list">
+                        <li>C#</li><li>.NET Core Minimal APIs</li><li>ASP.NET</li><li>Entity Framework Core</li><li>Clean Architecture</li><li>SQL</li><li>PHP</li><li>Yii2</li>
+                    </ul>
+                </article>
+                <article class="stack-card">
+                    <span class="stack-index">02</span>
+                    <h3>Frontend &amp; Mobile</h3>
+                    <ul class="tag-list">
+                        <li>Blazor WebAssembly</li><li>PWA</li><li>Swift</li><li>SwiftUI</li><li>HTML5</li><li>CSS3 Moderno</li>
+                    </ul>
+                </article>
+                <article class="stack-card">
+                    <span class="stack-index">03</span>
+                    <h3>IA, Sistemas &amp; Hardware</h3>
+                    <ul class="tag-list">
+                        <li>Python</li><li>YOLOv8</li><li>OpenCV</li><li>C++</li><li>Arduino</li><li>Linux</li><li>Git</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-section page-section" id="contacto" aria-labelledby="contact-title">
+            <div class="contact-copy">
+                <p class="eyebrow">VAMOS CONVERSAR <span class="eyebrow-divider">/</span> LEIRIA, PORTUGAL</p>
+                <h2 id="contact-title">Vamos construir<br>algo útil<span class="heading-period">?</span></h2>
+                <a class="contact-email" href="mailto:info@devcacti.com">info@devcacti.com <span aria-hidden="true">↗</span></a>
+            </div>
+            <address class="contact-details">
+                <a href="mailto:tiago.laim@icloud.com">tiago.laim@icloud.com</a>
+                <a href="tel:+351933763694">+351 933 763 694</a>
+                <div class="contact-socials">
+                    <a href="https://github.com/devCacti" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                    <a href="https://www.linkedin.com/in/tiago-laim" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                </div>
+            </address>
+        </section>
     </main>
-    <footer>
-        <div class="center">
-            <p>Made with <span class="heart">🩷</span> by devCacti</p>
-            <p>© 2025 devCacti</p>
-        </div>
+
+    <footer class="site-footer">
+        <a class="footer-mark" href="#inicio">TL<span>.</span></a>
+        <p>Desenhado e desenvolvido por Tiago Laim Rodrigues.</p>
+        <a class="back-to-top" href="#inicio">Voltar ao topo <span aria-hidden="true">↑</span></a>
     </footer>
-
-    <!--Scripts-->
-    <script src="JS/fluidsim.js"></script>
-    <script src="JS/starrysky.js"></script>
-    <script src="JS/javascript.js"></script>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-
-</body> 
+</body>
 </html>
-<!--https://devCacti.github.io -->
